@@ -10,6 +10,9 @@ const optionsController = require('../../../controllers/api/v1/options-controlle
 router.delete('/:id/:qid/delete',optionsController.delete);
 // route to add votes
 router.get('/:id/:qid/add_vote',optionsController.addVote);
+router.all('*',function(req,res){
+    res.status(404).json({message: "Not Found"})
+})
 
 
 //export the router
