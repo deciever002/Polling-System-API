@@ -27,6 +27,9 @@ router.post('/:id/options/create',questionsController.createOptions);
 router.delete('/:id/delete',questionsController.delete);
 // route to view particular question
 router.get('/:id',validateNumberParam,questionsController.fetchQuestion);
+router.all('*',function(req,res){
+    res.status(404).json({message: "Not Found"})
+})
 
 //export the router
 module.exports = router;
