@@ -25,3 +25,16 @@ PORT = "specify_the_port_on_which_you_want_to_run_your_application"
 npm start
 ```
 6. Navigate to browser and open https://localhost:8080 (Note: you can use any port just specify that port in the environment)
+
+#API GUIDE
+
+Here is a quick guide on how to use the API
+
+1. You can create polls by adding question to the polls this can be achieved using create question api route to api is ***/api/v1/questions/create***
+
+```
+{
+  id: 1, //Your question ID
+  title: "your_question"
+}
+```
