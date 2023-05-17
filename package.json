@@ -1,0 +1,34 @@
+{
+  "name": "polling-system-api",
+  "version": "1.0.0",
+  "description": "Polling system api is an open source api where users can create poll and add their vote to the options of the poll",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deciever002/Polling-System-API.git"
+  },
+  "keywords": [
+    "PollingSystem",
+    "API",
+    "Polling",
+    "vote",
+    "options"
+  ],
+  "author": "Manas Tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deciever002/Polling-System-API/issues"
+  },
+  "homepage": "https://github.com/deciever002/Polling-System-API#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^7.1.1",
+    "nodemon": "^2.0.22"
+  }
+}
