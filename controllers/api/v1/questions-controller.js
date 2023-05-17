@@ -1,6 +1,6 @@
-const Question = require("../../../models/Question");
+const Question = require('./../../../models/question');
 const mongoose = require('mongoose');
-const Option = require("../../../models/options");
+const Option = require("./../../../models/question");
 
 //Create an action in questions controller to add a question
 module.exports.create = async function(req,res){
