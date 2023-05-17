@@ -26,15 +26,33 @@ npm start
 ```
 6. Navigate to browser and open https://localhost:8080 (Note: you can use any port just specify that port in the environment)
 
-#API GUIDE
+# API GUIDE
 
 Here is a quick guide on how to use the API
 
 1. You can create polls by adding question to the polls this can be achieved using create question api route to api is ***/api/v1/questions/create***
 
 ```
+Request body
 {
   id: 1, //Your question ID
   title: "your_question"
 }
 ```
+
+2. You can add options to the question in poll using this route:  ***/api/v1/questions/:id/options/create***
+```
+Request body
+{
+  optionId: 1, //Your Option ID
+  text: "your_option"
+}
+```
+3. You can fetch a particular question by this route: ***/api/v1/questions/:id***
+4. You can delete a particular question by this route: ***/api/v1/questions/:id/delete***
+5. You can vote an option by using this route: ***/api/v1/options/:id/:qid/vote***
+6. You can delete a particular option by using this route ***/api/v1/options/:id/:qid/delete***
+
+
+## Postman collection 
+You can import postman collection attached with this repository to understand it well
